@@ -10,7 +10,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class EditarPensamentoComponent implements OnInit {
 
-  pensamento: Pensamento = { id: 0, conteudo: '', autoria: '', modelo: '' }
+  pensamento!: Pensamento;
 
   constructor(
     private service: PensamentoService,

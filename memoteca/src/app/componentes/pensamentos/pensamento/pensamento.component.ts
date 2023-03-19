@@ -8,7 +8,7 @@ import {Pensamento} from "../pensamento";
 })
 export class PensamentoComponent implements OnInit {
 
-  @Input() pensamento: Pensamento = { id: 0, conteudo: '', modelo: '', autoria: '' };
+  @Input() pensamento!: Pensamento;
 
   constructor() { }
 
