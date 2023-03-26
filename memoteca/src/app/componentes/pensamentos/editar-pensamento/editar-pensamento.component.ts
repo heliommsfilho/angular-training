@@ -31,7 +31,8 @@ export class EditarPensamentoComponent implements OnInit {
         Validators.required,
         Validators.minLength(3)
       ])],
-      modelo: ['modelo1', [Validators.required]]
+      modelo: ['modelo1', [Validators.required]],
+      favorito: [false]
     });
 
     const id = this.route.snapshot.paramMap.get('id');
@@ -41,6 +42,7 @@ export class EditarPensamentoComponent implements OnInit {
       this.formulario.get('conteudo')?.setValue(pensamento.conteudo);
       this.formulario.get('autoria')?.setValue(pensamento.autoria);
       this.formulario.get('modelo')?.setValue(pensamento.modelo);
+      this.formulario.get('favorito')?.setValue(pensamento.favorito);
     });
   }
 
@@ -49,7 +51,8 @@ export class EditarPensamentoComponent implements OnInit {
       id: this.formulario.get('id')?.value,
       conteudo: this.formulario.get('conteudo')?.value,
       autoria: this.formulario.get('autoria')?.value,
-      modelo: this.formulario.get('modelo')?.value
+      modelo: this.formulario.get('modelo')?.value,
+      favorito: this.formulario.get('favorito')?.value
     };
 
     this.service.editar(pensamento).subscribe(() => this.router.navigate(['listarPensamento']));

@@ -4,19 +4,29 @@
       "id": 1,
       "conteudo": "Pensamento 1",
       "autoria": "Anônimo",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": true
     },
     {
       "id": 2,
       "conteudo": "Pensamento 2",
       "autoria": "Anônimo",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "id": 3,
       "conteudo": "Pensamento 3",
       "autoria": "Anônimo",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
+    },
+    {
+      "id": 4,
+      "conteudo": "Irineu. Você não sabe nem eu.",
+      "autoria": "Desconhecido",
+      "modelo": "modelo1",
+      "favorito": false
     }
   ]
 }
